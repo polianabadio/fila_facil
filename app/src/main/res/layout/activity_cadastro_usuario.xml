@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/topcadastro"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:scaleX="1.7"
+        android:scaleY="1.7"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="10dp">
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:text="E-mail: *"
+        style="@style/Titulo" />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/EditText"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtNome"
+            android:text="Nome completo: *"
+            style="@style/Titulo"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_nome"
+            style="@style/EditText"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtSenha"
+            android:text="Senha: *"
+            style="@style/Titulo"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_senha"
+            style="@style/EditText"
+            android:hint="Senha"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtIdade"
+            android:text="Idade: *"
+            style="@style/Titulo"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_idade"
+            style="@style/EditText"
+            android:hint="Idade"
+            android:inputType="number"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/txtPerguntaRecuperarSenha"
+            android:text="Pergunta de recuperação de senha: *"
+            style="@style/Titulo"
+            android:layout_marginTop="20dp"/>
+
+
+        <EditText
+            android:id="@+id/edit_pergunta_recuperar_senha"
+            style="@style/EditText"
+            android:hint="Pergunta"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtRespostaRecuperarSenha"
+            android:text="Pergunta de recuperação de senha: *"
+            style="@style/Titulo"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_resposta_recuperar_senha"
+            style="@style/EditText"
+            android:hint="Resposta"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_cadastrar"
+            android:text="Cadastrar"
+            style="@style/Button"
+            android:layout_marginTop="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_voltar"
+            android:text="Voltar"
+            style="@style/Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/top_recuperar_senha"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="20dp"
+        android:scaleX="3.5"
+        android:scaleY="3.5"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="-10dp">
+
+        <TextView
+            android:id="@+id/txtPerguntaRecuperarSenha"
+            android:text="A pergunta cadastrada pelo usuário"
+            style="@style/Titulo" />
+
+        <TextView
+            android:id="@+id/txtRespostaRecuperarSenha"
+            android:text="Resposta para recuperar senha: *"
+            style="@style/Titulo"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/edit_resposta_recuperar_senha"
+            style="@style/EditText"
+            android:hint="Resposta"
+            android:inputType="text"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txtNovaSenha"
+            android:text="Nova senha: *"
+            style="@style/Titulo"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edit_nova_senha"
+            style="@style/EditText"
+            android:hint="Nova senha"
+            android:inputType="textPassword"
+            android:layout_marginTop="10dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_redefinir_senha"
+            android:text="Redefinir senha"
+            style="@style/Button"
+            android:layout_marginTop="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_voltar"
+            android:text="Voltar"
+            style="@style/Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

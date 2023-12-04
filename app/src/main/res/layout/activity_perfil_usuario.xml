@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:src="@drawable/icone_perfil"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txtNomeUsuario"
+            android:text="Nome Usuario"
+            android:layout_marginLeft="35dp"
+            android:textSize="25dp"
+            style="@style/Titulo" />
+
+
+
+        <TextView
+            android:id="@+id/txtEmailUsuario"
+            android:text="Emaildousuario@email.com"
+            style="@style/Titulo"
+            android:layout_marginLeft="35dp"
+            android:textSize="25dp"
+            android:layout_marginTop="20dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_editar_perfil"
+            android:text="Editar perfil"
+            style="@style/Button"
+            android:layout_marginTop="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_voltar"
+            android:text="Voltar ao menu"
+            style="@style/Button"
+            android:layout_marginTop="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_sair"
+            android:text="Sair"
+            style="@style/Button"
+            android:layout_marginTop="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/button_deletar_conta"
+            android:text="Excluir conta"
+            style="@style/ButtonTextView"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

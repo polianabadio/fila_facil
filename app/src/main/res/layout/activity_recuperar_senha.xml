@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/top_recuperar_senha"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:scaleX="3.5"
+            android:scaleY="3.5"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="-10dp">
+
+            <TextView
+                android:id="@+id/txtEmail"
+                android:text="E-mail: *"
+                style="@style/Titulo" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                style="@style/EditText"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="10dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_enviar"
+                android:text="Enviar"
+                style="@style/Button"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_voltar"
+                android:text="Voltar"
+                style="@style/Button"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_estabelecimento"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/placebo_foto" />
+
+            <TextView
+                android:id="@+id/txtNomeEstabelecimento"
+                android:layout_marginTop="40dp"
+                android:text="Nome do estabelecimento"
+                android:layout_marginLeft="5dp"
+                android:textSize="30dp"
+                style="@style/Titulo" />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtTituloLocalizacao"
+                android:layout_marginTop="5dp"
+                android:text="Localização:"
+                android:textSize="28dp"
+                style="@style/Titulo" />
+        <TextView
+            android:id="@+id/txtLocalizacao"
+            android:layout_marginTop="5dp"
+            android:text="Localização do estabelecimento"
+            android:textSize="25dp"
+            style="@style/Titulo" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_cadastrar_fila"
+            style="@style/Button"
+            android:layout_marginTop="10dp"
+            android:text="Cadastrar fila"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_editar_estabelecimento"
+            android:text="Editar estabelecimento"
+            style="@style/Button"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtTituloFilas"
+            android:layout_marginTop="5dp"
+            android:text="Filas:"
+            android:textSize="30dp"
+            style="@style/Titulo" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lista_estabelecimentos"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            app:layoutManager="LinearLayoutManager"
+            tools:listitem="@layout/activity_item_lista_fila" />
+    </LinearLayout>
+</ScrollView>
